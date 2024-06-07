@@ -1,0 +1,306 @@
+/* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+} */
+body{
+    background-color: rgb(255, 94, 0);
+    /* background: rgb(111, 207, 15); */
+	/* margin-bottom: -30px; */
+    /* min-height: 100vh;
+    width: 100vh; */
+}
+#navigation{
+    background-color: wheat ;
+    height: 60px;
+    display:flex;
+    justify-content: space-between;
+}
+#Swiggy
+{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif ;
+    margin-left: 10px;
+    margin-top: 1%;
+}
+#loc{
+    margin-right: 10px;
+    margin-top: 1%;
+    border: 2px solid white;
+}
+#bg_image{
+    /* height:300px; */
+    background-image:url(./images/wallpeper.jpg);
+    height: 600px;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+    background-attachment: fixed;
+
+}
+#bounce{
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 50%;
+    position: relative;
+    left: 45%;
+    top: 76%;
+    animation: bounce infinite 3s;
+}
+@keyframes bounce
+{
+0%{
+   
+    position: relative;
+   top: -2%;
+}
+100%{
+    position: relative;
+    top: 2%;}
+}
+#Best_place,p{
+    color: rgb(131, 26, 132);
+    font-size: 50px;
+    font-weight: bold;
+}
+#Best_place form{
+    text-align:left;
+    
+}
+#Best_place form select{
+    width: 300px;
+    height: 30px;
+    font-size: 20px;
+}
+#advertizment img{
+    height: 200px;
+    width: 20%;
+    margin-left: 10%;
+    margin-top: 2%;
+    animation:Slide-in 3s  infinite;
+}
+@keyframes Slide-in
+{
+0%{
+    transform: translatex(0);
+    position: relative;
+   top: -2%;}
+100%{
+    transform: translatex(100px);
+    position: relative;
+    top: 2%;}
+}
+#menu,span {
+    background-color: wheat ;
+height: 30px;
+display: flex;
+justify-content: space-around;
+font-weight: bold;
+/* font-family: 'Courier New', Courier, monospace; */
+font-size:large;
+}
+
+#menu form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#menu form select{
+    margin: 0 10px;
+
+}
+#common_food ,p
+{
+    height: 10px;
+    text-align: center;
+    align-items: center;
+    font-size:xx-large;
+
+}
+.first_box
+{
+    border: 1px solid black;
+    height: 250px;
+    width: 250px ;
+    margin: 2%;
+
+}
+.starter {
+    border: 1px solid black;
+    height: 200px;
+    width: 100%;
+
+}
+.starter img{
+    height: 100%;
+    width: 100%;
+}
+.all_content
+{
+   
+    display: flex;
+    flex-wrap:wrap;
+}
+.starter h3{
+    text-align: center;
+}
+.main 
+{
+    border: 1px solid black;
+    height: 300px;
+    width: 100%;
+    
+    
+    background-color: wheat;
+    /* font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif ;
+    margin-left: 10px;
+    margin-top: 1%;
+    width: 100%;
+    height: 300px; */
+     display: flex;
+     flex-wrap: wrap;  
+    
+
+}
+
+.footer
+{
+   
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif ;
+    margin-left: 10px;
+    margin-top: 1%;
+    width: 100%;
+  
+}
+.all_about{
+    margin-left: 20px;
+    margin-top: 1%;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif ;
+    
+
+}
+
+.about_swiggy {
+    margin-left: -12px;
+    margin-top: 1%;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif ;
+    
+
+}
+ .SwiggyVerse 
+{
+    margin-left: 50px;
+    margin-top: 1%;
+    margin-left: 1%;
+    font-size:  20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif ;
+    
+    
+}
+.For_Restaurant {
+    margin-left: 50px;
+    margin-top: 1%;
+    font-size:  20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif ;
+    
+    
+}
+.Learn_More 
+{
+    margin-left: 50px;
+    margin-top: 1%;
+    font-size:  20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif ;
+} 
+
+.all_about img{
+    height: 50px;
+    width: 50px;
+}
+
+@media screen and  (max-width:762px) 
+{
+    #common_food ,p
+    {
+        width: 100%;
+        font-size: larger;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .first_box{
+         width: 200px; ;
+    }
+    .starter{
+        width: 100%;
+    } 
+
+}
+@media screen and  (max-width:880px) 
+{
+    .main{
+        border: 1px solid black;
+    height: 300px;
+    width: 100%;
+    background-color: wheat;
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+}
+
+
+
+.foot{
+    /* border: 1px solid black; */
+    /* height: 10px; */
+    width: 100%;
+    /* margin-right: 1%; */
+}
+.policy p{
+font-size: small;
+font-family: Arial, Helvetica, sans-serif;
+color: black;
+}
+@media screen and  (max-width:2227px) 
+{
+.main{
+border: 1px solid black;
+    height: 300px;
+    width: 300%;
+    background-color: wheat;
+    display: flex;
+    flex-wrap: wrap;}
+}
+@media screen and  (max-width:450px) 
+{
+     .main{
+        margin-left: 11%;
+
+ border: 1px solid black;
+    height: 300px;
+    width: 300%;
+    background-color: wheat;
+    display: flex;
+    flex-wrap: wrap; 
+     }
+    }
